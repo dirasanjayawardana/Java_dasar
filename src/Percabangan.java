@@ -1,10 +1,10 @@
 public class Percabangan {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         var nilai1 = 10;
         var nilai2 = 20;
 
-        //------ if statement ------//
-        if(nilai1 >=5 && nilai2 <=100){
+        // ------ if statement ------//
+        if (nilai1 >= 5 && nilai2 <= 100) {
             System.out.println("Statement if");
         } else if (nilai1 == 20 || nilai2 == 30) {
             System.out.println("Satement else if");
@@ -12,8 +12,8 @@ public class Percabangan {
             System.out.println("Statement else");
         }
 
-        //------ switch statement (lebih sederhana dari if) ------//
-        switch(nilai1){
+        // ------ switch statement (lebih sederhana dari if) ------//
+        switch (nilai1) {
             case 5:
                 System.out.println("Statement switch 1");
                 break;
@@ -28,8 +28,9 @@ public class Percabangan {
                 break;
         }
 
-        //------ Switch dengan lambda (cara lebih sederhana menggunakan switch - untuk java 14 keatas) ------//
-        switch(nilai2){
+        // ------ Switch dengan lambda (cara lebih sederhana menggunakan switch - untuk
+        // java 14 keatas) ------//
+        switch (nilai2) {
             case 10 -> System.out.println("Statement lambda 1");
             case 20, 30 -> System.out.println("Statement lambda 2");
             case 40 -> System.out.println("Statement lambda 3");
@@ -38,8 +39,9 @@ public class Percabangan {
             }
         }
 
-        //------ Switch dengan yield (agar bisa return nilai dari switch case - untuk java 14 keatas) ------//
-        String ucapan = switch (nilai2){
+        // ------ Switch dengan yield (agar bisa return nilai dari switch case - untuk
+        // java 14 keatas) ------//
+        String ucapan = switch (nilai2) {
             case 10:
                 yield "nilai anda adalah 10";
             case 20:
@@ -49,8 +51,8 @@ public class Percabangan {
         };
         System.out.println(ucapan);
 
-        //------ Tenary operator (operator sederhana dari if else) ------//
-        String kalimat = nilai1 >= 10 ? "statement tenary true": "Statement tenary false";
+        // ------ Tenary operator (operator sederhana dari if else) ------//
+        String kalimat = nilai1 >= 10 ? "statement tenary true" : "Statement tenary false";
         System.out.println(kalimat);
     }
 }

@@ -1,5 +1,8 @@
 import java.lang.instrument.ClassDefinition;
 
+// static --> attribute atau method dipanggil dari class
+// non-static --> attribute atau method dipanggil dari object
+
 public class MethodOrFunction {
     public static void main(String[] args){
         sayHello();

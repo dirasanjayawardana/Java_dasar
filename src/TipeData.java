@@ -37,10 +37,10 @@ public class TipeData {
         // kata kunci yang datanya tidak bisa diubah (final --> konstant)
         final String cobaFinal = "nilai ini tidak bisa diubah";
 
-        // Tipe data primitif (memiliki nilai default saat pertama dideklarai --> false/""/0/0.0)
+        // Tipe data primitif (tidak memiliki refference class, memiliki nilai default saat pertama dideklarai --> false/""/0/0.0)
         // byte - short - int - long - float - double
 
-        // Tipe data non primitif (tidak memiliki nilai default --> null)
+        // Tipe data non primitif (memiliki refference class, tidak memiliki nilai default --> null)
         // Byte - Short - Integer - Long - Float - Double - Boolean - String
 
         // konversi tipe data primitif ke non primitif
