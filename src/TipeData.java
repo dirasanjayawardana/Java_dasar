@@ -1,10 +1,28 @@
 public class TipeData {
     public static void main(String[] args) {
+        // Tipe Data Number Decimal
+        // 1. Float
+        // Ukuran: 32-bit
+        // Presisi: Sekitar 7 digit desimal
+        // Kapan digunakan: Gunakan Float ketika Anda membutuhkan nilai desimal dengan presisi yang lebih rendah dan ukuran data yang kecil, serta ketika memori dan performa adalah prioritas. Misalnya, dalam grafik atau game di mana kecepatan lebih penting daripada akurasi.
+        // contoh : float value = 3.14159f;
+        
+        // 2. Double
+        // Ukuran: 64-bit
+        // Presisi: Sekitar 15 digit desimal
+        // Kapan digunakan: Gunakan Double ketika Anda memerlukan keseimbangan antara presisi dan kinerja. Double adalah tipe data default untuk angka desimal di Java dan sering digunakan dalam aplikasi ilmiah, keuangan, atau engineering yang memerlukan presisi sedang.
+        // contoh : double value = 3.141592653589793;
+        
+        // 3. BigDecimal
+        // Ukuran: Arbitrary-precision
+        // Presisi: Sangat tinggi, sesuai kebutuhan
+        // Kapan digunakan: Gunakan BigDecimal ketika Anda membutuhkan presisi yang sangat tinggi, seperti dalam aplikasi keuangan yang tidak mentoleransi kesalahan pembulatan (misalnya, transaksi moneter). Operasi dengan BigDecimal lebih lambat dibandingkan dengan Float atau Double, tetapi presisi dan akurasinya jauh lebih tinggi.
+        // contoh : BigDecimal value = new BigDecimal("10000000000000.0123");
+
         byte iniByte = 100;
         short iniShort = 1000;
         int iniInt = 10000000;
         long iniLong = 10000000000L; // tambahkan L dibelakang angka
-
         float iniFloat = 10.05F; // tambahkan F dibelakang angka
         double iniDouble = 10.05;
 
@@ -12,8 +30,7 @@ public class TipeData {
         int hexInt = 0xA132B; // tambahkan 0x didepan angka
         int binaryDecimal = 0b0101010; // tambahkan 0b didepan angka
 
-        // bisa gunakan underscore untuk memisahkan agar tidak membingungkan
-        long balance = 1_000_000_000_000L;
+        long balance = 1_000_000_000_000L; // bisa gunakan underscore untuk memisahkan agar tidak membingungkan
 
         // konversi angka otomatis (widening casting): byte -> short -> int -> long -> float -> double
         short konversiShort = iniByte;
